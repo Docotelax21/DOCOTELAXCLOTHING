@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>About — Docotela X</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="top-nav" role="navigation" aria-label="Main navigation">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <nav id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <a href="home.html">Home</a>
+    <a href="collections.html">Collections</a>
+    <a href="gallery.html">Art Gallery</a>
+    <a href="exclusive-drops.html">Exclusive Drops</a>
+    <a href="membersonly.html">Members Only</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="about-section fade-in-slow">
+    <h1 class="about-title">About Docotela X</h1>
+
+    <div class="story-block fade-in-slow">
+      <p class="persona">Docotela X began as a private experiment — a wayfinding through clothes that carry memory and motion. We believe in garments that breathe with a life beyond trend; they are vessels for a state of mind.</p>
+    </div>
+
+    <div class="story-block fade-in-slow">
+      <p>We make small runs. We work with hands. Each collection is a curated chapter — quiet, fierce, and made for a body that wants to move freely. When people asked us to conform, we doubled down on freedom. The result: a language of material and restraint.</p>
+    </div>
+
+    <div class="story-block fade-in-slow">
+      <p class="sm">We also cherish the people who walk with us: the artists, the makers, the friends and the collectors. That care shows up stitched into seams and signed into small runs. Docotela X exists for those who want to wear conviction, not fashion.</p>
+    </div>
+  </main>
+
+  <script src="menu.js"></script>
+  <script src="animations.js"></script>
+  <script>/* ensure reveals run */ window.addEventListener('load', ()=> { document.querySelectorAll('.fade-in-slow').forEach(el=>el.classList.add('show')); });</script>
+</body>
+</html>
